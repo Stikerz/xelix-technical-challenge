@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "xelix-interview"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.*"
+Django = "4.*"
+djangorestframework = "^3.14.0"
+pytest = "^8.0.1"
+pytest-django = "^4.5.2"
+factory-boy = "^3.3.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
