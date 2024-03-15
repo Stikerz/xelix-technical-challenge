@@ -1,10 +1,29 @@
-# My Solution to the Xelix Backend Technical Challenge to be done in a hour (took me 2)
+# Xelix Backend Technical Challenge
 
 Xelix requires a solution to extract information and identify problems with supplier invoices. A developer has started by creating a simple Django application to store and display the data. The application has a management command to generate fake demo data. 
 
 ## Environment Setup
 
-The project dependencies are listed in the requirements.txt file. You may like to create yourself a virtual environment from which to run the project. 
+### Poetry:
+
+```bash
+poetry env use python3.10 # Or /full/path/to/python if you have to
+poetry shell
+poetry install --no-root
+```
+
+If you do not have poetry or pyenv installed see this link 
+for [Poetry](https://pypi.org/project/poetry/) and [Pyenv](https://github.com/pyenv/pyenv) run the corresponding section.
+
+### Pyenv:
+
+```bash
+pyenv install 3.10.*
+pyenv local 3.10.0 # Activated python 3.10 for this project
+```
+
+If you do not wish to use poetry the project dependencies are listed in the requirements.txt file. 
+You may like to create yourself a virtual environment from which to run the project. 
 
 You will need to initialize the database and run a script to populate it with demo data by running the following commands:
 
